@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music - Illegible</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/page.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- <script src="JS/index.js"></script> -->
+</head>
+
+<body>
+    <header class="navb">
+        <div class="nav">
+            <a href="#" class="logo">Illegible</a>
+            <ul>
+                <li class="current"><a href="#">HOME</a></li>
+                <li><a href="#">LIVE SHOWS</a></li>
+                <li><a href="#">MUSIC</a></li>
+                <li><a href="#">JOIN THE FAM</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+            <div class="menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </header>
+    <div class="head">
+        <p>
+            MUSIC
+        </p>
+    </div>
+    <section class="banner">
+
+    </section>
+        <about class="about">
+            <h2>ABOUT</h2><hr class="hr" style="width:30%; margin: 12px auto;">
+            <div class="aboutSec">
+                <span>
+                    SINGER || 
+                </span>
+                <span>
+                    PRODUCER ||
+                </span>
+                <span>
+                    MUSICIAN
+                </span>
+            </div>
+            <div class="intro">
+                <h4>Illegible knows his music, with its fast but never-breathless lyrical rhymes, is a musical genre that allows the performer to catch and captivate the listener’s imagination. Hip-hop artist Illegible is familiar with the concept of being captivating.</h4>
+            <p> As a leading pop artist, model, and influencer, he stands out among his peers, displaying his unshakeable confidence as proudly as he dons his many intricate outfits. Currently making waves within the ocean that is the LA Music World, Illegible took time out from his hectic schedule to share an insight into his creative process.<br> Discovered by Spotify with his latest single, “Shock”, it debuted the impressive vocal abilities of Illegible, who was already a bona fide influencer and model with a robust following on Instagram. An overlap between a producer and a musical career is not unheard of before, but Illegible is unique for his seamless transition into the scene and his bravado that sets him apart from those who have come before.<br> So, what powers Illegible’s creative process and brings his music to life? “Rap is powered by your energy; it is something you conduct like an electric current,” shares the artist. “So, my creative process entails capturing that energy, directing it at the mic, and getting it locked down. In rap, you create the greatest lyrics when you simply give yourself over to that charged energy.”<br> Illegible is a multi-instrumentalist, as well as being part of an indie punk band. But it wasn’t until he was nineteen that he discovered his passion for rapping. After releasing “One Night” in 2019, he followed up that confident track with the equally exuberant musical flex, “Society” in 2021. Since then, he has steadily accumulated followers and listener numbers on Spotify and other streaming platforms.</p>
+            </div>
+
+        </about>
+        <section class="portfolio">
+            <div class="cont">
+                <div class="sect item1"><img src="IMG/p1.jpg" alt="something wrong" srcset=""></div>
+                <div class="sect item2"><img src="IMG/p2.jpg" alt="something wrong" srcset=""></div>
+                <div class="sect item3"><img src="IMG/p3.jpg" alt="something wrong" srcset=""></div>
+                <div class="sect item4"><img src="IMG/p4.jpg" alt="something wrong" srcset=""></div>
+                <div class="sect item5"><img src="IMG/p5.jpg" alt="something wrong" srcset=""></div>
+                <div class="sect item6"><img src="IMG/p6.jpg" alt="something wrong" srcset=""></div>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="foot">
+                <h2>JOIN ME</h2>
+            <hr>
+            <p>Follow me on social networks</p>
+            </div>
+            <div class="links">
+                <a href="https://open.spotify.com/artist/68XJdSZUWo8jrwO427BoGR?si=wD_2TxQDSNicdf3KNKe9Mg&nd=1" class="href"><span class="material-icons">
+                    graphic_eq
+                    </span></a>
+                <!-- <li><span class="material-icons">
+                    library_music
+                    </span></li> -->
+                <!-- <li<span class="material-icons">
+                    audiotrack
+                    </span>></li> -->
+                <!-- <li><span class="material-icons">
+                    album
+                    </span></li> -->
+                <a href="https://music.youtube.com/channel/UCViXWnhN6MQVqjCNUcqwwRA" class="href"><span class="material-symbols-outlined">
+                    youtube_music
+                    </span></a>
+                <a href="https://youtube.com/channel/UCgBGny2MGjP1dsonfa_ilyg" class="href"><span class="material-symbols-outlined">
+                    youtube_tv
+                    </span></a>
+            </div>
+            
+        </section>
+        <scetion class="copyright">
+            <div class="copyR"><p>Copyright © 2022 - Designed By Mrutunjay</p></div>
+        </scetion>
+    <script>
+        // scroll nav effect
+        const nav = document.querySelector('.navb');
+        window.addEventListener("scroll", fixNav);
+
+        function fixNav() {
+            if (window.scrollY > nav.offsetHeight + 150) {
+                nav.classList.add('activer')
+            }
+            else {
+                nav.classList.remove('activer')
+            }
+        }
+
+        // now for menu button
+        const navSlide = () => {
+            const burger = document.querySelector('.menu');
+            const nav = document.querySelector('ul');
+
+            burger.addEventListener("click",() =>{
+                burger.classList.toggle('active');
+                nav.classList.toggle('active');
+
+            });
+        }
+        navSlide();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,264 @@
+@media screen and (max-width:1453px) {
+    .nav{
+        gap: 35vw;
+    }
+    .footer{
+        margin-top: 35vh;
+        height: 30vh;
+    }
+    .cont{
+        padding-left: 90px;
+    }
+    .about{
+        height: 100vh;
+    }
+    .portfolio{
+        margin-top: 20vh;
+    }
+}
+@media screen and (max-width:1180px) {
+    .about{
+        height: 90vh;
+    }
+    .portfolio{
+        margin-top: 10vh;
+    }
+    .sect{
+        flex: 33%;
+    }
+    .footer{
+        margin-top: 35vh;
+        height: 30vh;
+    }
+}
+@media screen and (max-width:1140px) {
+    .nav{
+        gap: 25vw;
+    }
+    .footer{
+        margin-top: 35vh;
+        height: 25vh;
+    }
+}
+@media screen and (max-width:1128px) {
+    .about{
+        height: 100vh;
+    }
+    .portfolio{
+        margin-top: 20vh;
+        box-sizing: border-box;
+    }
+    .footer{
+        margin-top: 35vh;
+        height: 20vh;
+    }
+}
+@media (max-width:991px) {
+    .head p{
+        left: 40%;
+    }
+    .nav{
+        gap: 7vw;
+    }
+    .footer{
+        margin-top: 80vh;
+    }
+    .sect{
+        flex: 50%;
+    }
+}
+@media screen and (max-width:780px) {
+    .head p{
+        left: 35%;
+    }
+    .navb.activer{
+        height: 10vh;
+    }
+    .nav{
+        display: flex;
+        flex-direction: column;
+        height: 150vh;
+    }
+    .intro{
+        padding: 50px;
+    }
+    .footer{
+        margin-top: 80vh;
+        height: 20vh;
+    }
+    
+    ul {
+        position: relative;
+        top: -10000px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;;
+        transition: all 0.4s;
+        height: 100%;
+        background: white;
+    }
+    ul.active{
+        top: -22vh;
+        transition: all 0.6s;
+    }
+    .navb.activer .nav ul{
+        transition: all 0.6s;
+        background-color: white;
+        margin-top: 30px;
+        height: 100%;
+    }
+    .navb.activer .nav ul.active{
+        height: 200vh;
+    }
+    
+    li {
+        margin-top: 4px;
+        margin-bottom: 4px;
+        border-radius: 2px;
+        padding: 1px 0;
+        width: 100%;
+        text-align: center;
+    }
+    li:nth-child(1){
+        margin-top: 120px;
+    }
+    header ul li a{
+        color: #000;
+    }
+    li:hover {
+        padding: 15px;
+    }
+    .menu{
+        z-index: 2;
+        position: absolute;
+        display: block;
+        left: 85%;
+        transition: all 0.3s;
+    }
+    .navb.activer .menu .line{
+        background: #000;
+    }
+    .menu.active .line:nth-child(2){
+        opacity: 0;
+        transition: all 0.3s;
+    }
+    .menu.active .line:nth-child(1){
+        transform: translateY(10px) rotate(45deg);
+        transition: all 0.3s;
+
+    }
+    .menu.active .line:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+        transition: all 0.3s;
+    }
+    .nav li.current {
+        padding: 15px;
+        border-radius: 5px;
+        border: 1px solid white;
+    }
+}
+@media screen and (max-width:722px) {
+    .head p{
+        left: 35%;
+    }
+    .about{
+        height: 120vh;
+    }
+    .portfolio{
+        margin-top: 40vh;
+    }
+    .cont{
+        padding-left: 25vw;
+    }
+    .nav{
+        gap: 3vw;
+    }
+    .intro{
+        padding: 50px;
+    }
+    .sect{
+        flex: 100%;
+    }
+    .footer{
+        margin-top: 225vh;
+    }
+}
+@media screen and (max-width:558px) {
+    .head p{
+        left: 33%;
+    }
+    .about{
+        height: 180vh;
+    }
+    .portfolio{
+        margin-top: 100vh;
+    }
+    .cont{
+        padding-left: 16vw;
+    }
+    .nav{
+        gap: 3vw;
+    }
+    .intro{
+        padding: 30px;
+    }
+    .sect{
+        flex: 100%;
+    }
+    .footer{
+        margin-top: 220vh;
+        
+    }
+    .navb.activer .nav ul.active{
+        height: 250vh;
+    }
+}
+@media (min-width:370px) and (max-width:427px) {
+    .head p{
+        left: 35%;
+    }
+    
+    .about{
+        height: 180vh;
+        width: 120%;
+    }
+    .banner{
+        width: 120%;
+    }
+    .cont{
+        padding-left: 85px;
+    }
+    .footer{
+        margin-top: 220vh;
+        width: 120%;
+    }
+    .copyR{
+        width: 120%;
+    }
+    .navb.activer .nav ul.active{
+        height: 250vh;
+    }
+}
+@media (max-width:370px) {
+    .about{
+        width: 140%;
+    }
+    .nav{
+        height: 250vh;
+    }
+    .banner{
+        width: 140%;
+    }
+    .cont{
+        padding-left: 85px;
+    }
+    .copyR{
+        width: 140%;
+    }
+    .footer{
+        width: 140%;
+    }
+    .navb.activer .nav ul.active{
+        height: 300vh;
+    }
+}
